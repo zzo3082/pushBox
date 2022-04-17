@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0; }
+  
+  body {
+    background-color: rgb(0, 0, 0);
+    /* background-image: url(../img/toppng.com-ba-gameboy-advance-493x286.png);
+    background-repeat: no-repeat;
+    background-position-x: 253px;
+    background-position-y: 50px;
+    background-size: 60%; */
+    position: relative;
+    background-image: url(../img/game.png);
+    background-repeat: no-repeat;
+    /*background-size: 1522px 800px;*/
+    background-size:90%;
+    margin: 0;
+    background-position: center;
+    background-position-y: 0px;
+    height:100%;
+  }
+
+.map{
+   overflow: hidden; 
+   margin: 15vh auto 0; 
+   position: relative;
+   top: 40px;
+   height: 480px;
+   width:  480px;
+}
+
+.map div{
+    float: left;
+    width: 40px;
+    height:40px;
+}
+
+.type1{
+     /*要推的地方*/
+    opacity: .5;
+}
+.type1, .type2{
+    /*background-image: url(../img/grass.jpg);*/
+    background: url() ,url(../img/grass.jpg);
+    background-size: 40px 40px;
+}
+.type3{
+     /*牆壁*/
+    background-image: url(../img/wall.png);
+    background-size: 40px 40px;
+    opacity: .85;
+}
+.type4{
+      /*箱子*/
+    box-sizing: border-box;
+    border:1px solid  rgba(7,17,27,.5);
+    background-image: url(../img/box.png);
+    background-size: 40px 40px;
+}
+.type5 {
+    /*角色*/
+    width: 40px;
+    height: 40px;
+    background: url("../img/walk_down.png") ,url(../img/grass.jpg);
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+   }
+#ctrl{
+  position: absolute;
+  left: 50%;
+  top: 3%;
+  margin-left: -151px;
+  margin-top: -15px;
+}
+
+
+button{
+  position: relative;
+  margin: auto;
+  border:0;
+  background-color:#ac8ce0ec;
+  color:rgb(0, 0, 0);
+  width: 70px;
+  height: 30px;
+  font-size: 20px;
+  text-align: center;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+span{
+  position: relative;
+  /*margin: auto;*/
+  border:0;
+  background-color:#ac8ce0ec;
+  color:rgb(0, 0, 0);
+  font-size: 25px;
+  text-align: center;
+  border-radius:10px;
+
+}
+
+button:hover, #gamestart:hover, #returnToIntroPage:hover, select:hover, #re:hover{
+  color:#ac8ce0ec;
+  background-color:#fff;
+  border:2px #ac8ce0ec solid;
+}
+select{
+  border:0;
+  background-color:#ac8ce0ec;
+  color:rgb(0, 0, 0);
+  width: auto;
+  height: 30px;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+#gamestart, #returnToIntroPage, #re{
+  border:0;
+  background-color:#ac8ce0ec;
+  color:rgb(0, 0, 0);
+  width: 150px;
+  height: 30px;
+  border-radius:10px;
+  cursor:pointer;
+}
+.intro{
+  border:0;
+  background-color:#f0f0f0ec;
+  color:rgb(0, 0, 0);
+  width: 400px;
+  height: 200px;
+  position: relative;
+  margin: auto;
+  top: 200px;
+  text-align: center;
+  border-radius:10px;
+}
+#timeout{
+  visibility: hidden;
+  border:0;
+  background-color:#f0f0f0ec;
+  color:rgb(0, 0, 0);
+  width: 400px;
+  height: 200px;
+  position:absolute;  
+  left: 50%;
+  top: 50%;
+  margin-left: -200px;
+  margin-top: -100px;
+  text-align: center;
+  border-radius:10px;
+}
